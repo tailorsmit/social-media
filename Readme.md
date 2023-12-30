@@ -14,7 +14,7 @@
  3. export a variable for SECRET_KEY (Run `export SECRET_KEY='your_secret_key'`).
  4. Run `python manage.py makemigrations && python manage.py migrate` to create and apply migration to your database.
  
-## Run Server
+## Run Server (Production Ready)
 
 ### Without Docker
     gunicorn assignment1.wsgi -b 0.0.0.0:8000
@@ -30,3 +30,7 @@
    mount volume so that we will not lose the db information residing
    in container. also, `$SECRET_KEY` should be same as the one we have
    exported in **Configuration** section.
+
+### POSTMAN Collection
+ - To import this collection in Postman go to files > import > browse files
+ - select the location for file `Assignment1.postman_collection.json` (present in root directory of project.)
